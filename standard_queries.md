@@ -1,4 +1,4 @@
-1. To import tables from Athena in Redshift
+1. ###### To import tables from Athena in Redshift
 ```sql
 create external schema schema_name from data catalog 
 database 'glue_db' 
@@ -6,7 +6,8 @@ iam_role 'arn:aws:iam::account_id:role/myRedshiftRole'
 region 'region';
 ```
 Replace schema_name, glue_db, account_id,myRedshiftRole, region with your values
-2. To delete schema 
+
+2. ###### To delete schema 
 ```sql
 drop schema schema_name
 ```
