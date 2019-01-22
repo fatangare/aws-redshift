@@ -19,7 +19,7 @@ where "table" like 'dist%';
 ```
 Replace 'dist%' with your table prefix
 
-4. ###### To get block size in MB
+4. ###### To determine how many 1 MB blocks of disk space are used for each table
 ```sql
 select stv_tbl_perm.name as table, count(*) as mb
 from stv_blocklist, stv_tbl_perm
