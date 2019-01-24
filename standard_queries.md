@@ -38,3 +38,8 @@ and col < 17
 group by name, col
 order by col;
 ```
+
+6. ###### To get all temp tables
+```sql
+select distinct(name) from stv_tbl_perm where temp = 1;
+```
